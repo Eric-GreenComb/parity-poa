@@ -1,0 +1,15 @@
+[parity]
+chain = "fifu-spec.json"
+base_path = "/home/eric/go/src/github.com/Eric-GreenComb/parity-poa/parity2"
+[network]
+port = 30302
+[rpc]
+port = 8542
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+cors = ["*"]
+[ui]
+port = 8182
+[websockets]
+port = 8452
+[ipc]
+disable = true
