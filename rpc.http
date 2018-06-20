@@ -1,0 +1,252 @@
+###web3_clientVersion
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"web3_clientVersion",
+    "params":[],
+    "id":67
+}
+
+###web3_sha3
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"web3_sha3",
+    "params":["0x68656c6c6f20776f726c64"],
+    "id":67
+}
+
+###net_version
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"net_version",
+    "params":[],
+    "id":67
+}
+
+###net_listening
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"net_listening",
+    "params":[],
+    "id":67
+}
+
+###net_peerCount
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"net_peerCount",
+    "params":[],
+    "id":67
+}
+
+###eth_protocolVersion
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_protocolVersion",
+    "params":[],
+    "id":67
+}
+
+###eth_syncing  error
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_syncing",
+    "params":[],
+    "id":1
+}
+
+###eth_coinbase
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_coinbase",
+    "params":[],
+    "id":67
+}
+
+###eth_mining
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_mining",
+    "params":[],
+    "id":67
+}
+
+###eth_hashrate
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_hashrate",
+    "params":[],
+    "id":67
+}
+
+###eth_gasPrice
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_gasPrice",
+    "params":[],
+    "id":73
+}
+
+###查看账户信息 eth_accounts
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0", 
+    "method":"eth_accounts",
+    "params":[],
+    "id":67
+}
+
+### 查看区块高度 eth_blockNumber
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_blockNumber",
+    "params":[],
+    "id":67
+}
+
+###查看账户余额 eth_getBalance
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getBalance",
+    "params":["0x00eaf5c65f32917c922364e4892b5ec5a35baa6e","latest"],
+    "id":67
+}
+
+### eth_getStorageAt 可以查询代币余额
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getStorageAt",
+    "params":["0xfBE97c0324C44824F1d1c26669Dc590162cB9f16", "0x0", "latest"],
+    "id":67
+}
+
+### eth_getTransactionCount
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getTransactionCount",
+    "params":["0x00eaF5c65F32917c922364e4892b5EC5A35baa6E", "latest"],
+    "id":67
+}
+
+### eth_getBlockTransactionCountByHash error
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getBlockTransactionCountByHash",
+    "params":["0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238", "latest"],
+    "id":67
+}
+
+### eth_getBlockTransactionCountByNumber
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getBlockTransactionCountByNumber",
+    "params":["0xa"],
+    "id":67
+}
+
+### 返回给定地址的代码
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getCode",
+    "params":["0xF1B5846669cD60E5CF766097bF052844727d0F29"],
+    "id":67
+}
+
+### eth_sign
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_sign",
+    "params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],
+    "id":1
+}
+
+### eth_sendTransaction 发送代币
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_sendtransaction",
+    "params":[{
+        "from": "0x00eaF5c65F32917c922364e4892b5EC5A35baa6E",
+        "to": "0xF1B5846669cD60E5CF766097bF052844727d0F29",
+        "gas": "0x0", // 30400
+        "gasPrice": "0x0", // 10000000000000
+        "value": "0x0", // 2441406250
+        "data": "0xa9059cbb00000000000000000000000000eaF5c65F32917c922364e4892b5EC5A35baa6E00000000000000000000000000000000000000000000000000000000000003e8"
+    }],
+    "id":1
+}
+
+### 查询ERC20代币 eth_call
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_call",
+    "params":[{
+        "to":"0xF1B5846669cD60E5CF766097bF052844727d0F29", 
+        "data":"0x70a0823100000000000000000000000000eaF5c65F32917c922364e4892b5EC5A35baa6E"}, 
+        "latest"
+    ],
+    "id":1
+}

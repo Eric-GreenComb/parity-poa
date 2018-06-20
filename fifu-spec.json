@@ -1,13 +1,13 @@
 {
-    "name": "DemoPoA",
+    "name": "FiFuPoA",
     "engine": {
         "authorityRound": {
             "params": {
                 "stepDuration": "5",
                 "validators": {
                     "list": [
-                        "0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e",
-                        "0x00Aa39d30F0D20FF03a22cCfc30B7EfbFca597C2"
+                        "0x008b7b778ae54d339df2455a554be8ab46e7553c",
+                        "0x00073e4af6ff4b69819168204d992f489d86139f"
                     ]
                 }
             }
@@ -78,8 +78,8 @@
                 }
             }
         },
-        "0x004ec07d2329997267ec62b4166639513386f32e": {
-            "balance": "10000000000000000000000"
+        "0x00eaf5c65f32917c922364e4892b5ec5a35baa6e": {
+            "balance": "1000000000000000000000000000"
         }
     }
 }
