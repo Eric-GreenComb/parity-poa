@@ -174,6 +174,17 @@ Content-Type: application/json
     "id":67
 }
 
+### eth_getTransactionReceipt
+POST http://127.0.0.1:8540
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"eth_getTransactionReceipt",
+    "params":["0x390292d49d576c810ac8e8a10aa38021d1b36c57342416099e4f500b10016740"],
+    "id":67
+}
+
 ### eth_getBlockTransactionCountByHash error
 POST http://127.0.0.1:8540
 Content-Type: application/json

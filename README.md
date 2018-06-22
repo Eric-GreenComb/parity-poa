@@ -58,6 +58,12 @@ curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["
 
 curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node3", "node3"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8543
 
+### cmd
+
+parity --rpc --rpccorsdomain "*" --port "30300" --rpcapi "db,eth,net,web3" --unlock '0' --password /home/eric/go/geth/password --nodiscover --maxpeers '50' --networkid '33042' --datadir '/home/eric/go/geth' --ipcpath /home/eric/.ethereum/geth.ipc console
+
+parity --identity "ethTest" --rpc --rpccorsdomain "*" --datadir /home/eric/go/src/github.com/Eric-GreenComb/parity-poa/parity0 --port 30300 --rpcapi "db,eth,net,web3" --networkid '33042' console
+
 ### transfer data
 
 data:
